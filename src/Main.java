@@ -8,6 +8,8 @@ public class Main {
         System.out.print("Tutar giriniz : ");
         tutar = inp.nextDouble();
 
+        if(tutar > 1000) kdvOran = 0.08;
+
         kdvTutar = tutar * kdvOran;
         kdvliTutar = tutar + kdvTutar;
 
